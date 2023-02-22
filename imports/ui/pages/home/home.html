@@ -1,0 +1,12 @@
+<template name="home">
+    <div class="container">
+        <div class="row">
+            {{#each item in showPosts}}
+            {{>card data=item}}
+            {{/each}}
+        </div>
+    </div>
+    {{#if isPag}}
+    <ul id="pagination-demo" class="mt-3 pagination-md"></ul>
+    {{/if}}
+</template>

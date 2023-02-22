@@ -1,0 +1,16 @@
+<template name="profile">
+    <button type="button" class="btn btn-primary openModal editBtn" data-toggle="modal" data-target="#exampleModalLong">
+        Create post
+    </button>
+    <div class="container">
+        <div class="row">
+            {{#each item in showPosts}}
+            {{>card data=item isProfile=true}}
+            {{/each}}
+        </div>
+        {{>modal data=itemData.data}}
+    </div>
+    {{#if isPug}}
+    <ul id="pagination-demo" class="mt-3 pagination-md"></ul>
+    {{/if}}
+</template>
