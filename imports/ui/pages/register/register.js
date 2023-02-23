@@ -14,6 +14,7 @@ Template.register.events({
         }, function (err) {
             if (err) console.log(err)
             else{
+                $('.toast').toast({ animation: true, delay: 1000 }).toast('show')
                 FlowRouter.go('/home')
             }
         })

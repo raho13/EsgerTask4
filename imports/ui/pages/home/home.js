@@ -53,7 +53,8 @@ Template.home.events({
         Meteor.call('addToBucket', data, function (err, res) {
             if (err) console.log(err)
             else {
-                // console.log(res)
+                $('.toast').toast({ animation: true, delay: 1000 }).toast('show')
+
             }
         })
     }

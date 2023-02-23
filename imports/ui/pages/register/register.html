@@ -1,4 +1,11 @@
 <template name="register">
+    <div class="toast mt-2" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            <h6>
+                Ugurla qeydiyyatdan kecdiniz
+            </h6>
+        </div>
+    </div>
     <div class="container">
         <form id="registerForm">
             <div class="form-group">
@@ -16,6 +23,7 @@
                 <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/login">  Login page  </a>
         </form>
     </div>
 

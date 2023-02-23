@@ -9,6 +9,7 @@ Template.login.events({
         Meteor.loginWithPassword(username, password, function (err, res) {
             if (err) console.log(err)
             else {
+                $('.toast').toast({ animation: true, delay: 1000 }).toast('show')
                FlowRouter.go('/home')
             }
         })
